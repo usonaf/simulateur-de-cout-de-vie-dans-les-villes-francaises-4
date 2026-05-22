@@ -1,0 +1,304 @@
+{
+  "run_id": "run-1779420140546",
+  "job_index": 4,
+  "params": {
+    "owner_user_id": "user-1774822953462",
+    "owner_username": "admin",
+    "owner_display_name": "Administrator",
+    "count": 5,
+    "archetype": "calculator",
+    "market": "France",
+    "language": "fr",
+    "country": "FR",
+    "brief": "Quel sera votre budget ? Comparez le coût de la vie entre les villes françaises pour mieux planifier votre in…",
+    "notes": "Comparez le coût de la vie dans différentes villes françaises pour planifier un déménagement ou évaluer un budget. Inclut l'immobilier, les transports, l'alimentation et les loisirs.\nIncorporate regional variations in cost of living, housing markets, and typical expenses for singles, couples, and families.",
+    "import_notes": "",
+    "growth_job_id": "",
+    "growth_slug": "",
+    "growth_kind": "",
+    "external_site_request_id": "",
+    "external_client_ref": "",
+    "external_source_label": "",
+    "dashboard_mode": "builder",
+    "network_site_format": "forum",
+    "network_primary_topic": "",
+    "network_primary_geo": "",
+    "network_domain_pool": "forum-de-jeu.shop",
+    "network_hosting_pool": "4vps:netoper | server_id=447345 | ip=5.253.59.18 | ssh_user=root | ssh_port=22",
+    "network_dns_strategy": "auto_pool_assign",
+    "network_domain_flow": "manual",
+    "network_content_strategy": "",
+    "network_model_concept": "google/gemini-2.5-flash-lite:nitro",
+    "network_model_seo": "google/gemini-2.5-flash-lite:nitro",
+    "network_model_build": "google/gemini-2.5-flash",
+    "network_model_qa": "anthropic/claude-haiku-4.5",
+    "network_model_growth": "google/gemini-2.5-flash-lite:nitro",
+    "network_blueprint_id": "",
+    "mode": "production",
+    "run_kind": "generated_batch",
+    "publish_target": "render",
+    "requested_publish_target": "render",
+    "provider_space_id": "provider-space",
+    "provider_space_name": "Provider space",
+    "allow_url_fallback": false,
+    "railway_project_id_override": "",
+    "railway_environment_id_override": "",
+    "railway_service_id_override": "",
+    "railway_service_name_override": "",
+    "github_repo_private": true,
+    "stage_models": {
+      "ideation": "google/gemini-2.5-flash-lite:nitro",
+      "spec": "google/gemini-2.5-flash",
+      "copy": "google/gemini-2.5-flash-lite:nitro",
+      "qa": "anthropic/claude-haiku-4.5",
+      "escalation": "anthropic/claude-sonnet-4.6"
+    },
+    "archetype_display": "mixed batch",
+    "archetype_mix": [
+      "calculator",
+      "tool",
+      "generator"
+    ],
+    "forced_design_theme": "alpine-clarity",
+    "forced_structure_preset": "quick-compare-strip",
+    "site_idea_title": "Simulateur de Coût de Vie dans les Villes Françaises",
+    "site_idea_summary": "Comparez le coût de la vie dans différentes villes françaises pour planifier un déménagement ou évaluer un budget. Inclut l'immobilier, les transports, l'alimentation et les loisirs."
+  },
+  "site_spec": {
+    "slug": "simulateur-de-cout-de-vie-dans-les-villes-francaises-4",
+    "theme": {
+      "name": "Alpine Clarity",
+      "slug": "alpine-clarity",
+      "eyebrow": "Airy Precision",
+      "family": "alpine-clarity",
+      "moods": [
+        "clean",
+        "airy",
+        "trustworthy",
+        "cool"
+      ],
+      "archetypes": [
+        "calculator",
+        "tool",
+        "generator"
+      ],
+      "niches": [
+        "health",
+        "finance",
+        "comparison",
+        "clean tech",
+        "consulting"
+      ],
+      "keywords": [
+        "alpine",
+        "clean",
+        "air",
+        "clarity",
+        "trust"
+      ],
+      "token_index": [
+        "air",
+        "airy",
+        "alpine",
+        "calculator",
+        "clarity",
+        "clean",
+        "comparison",
+        "consulting",
+        "cool",
+        "finance",
+        "generator",
+        "health",
+        "precision",
+        "tech",
+        "tool",
+        "trust",
+        "trustworthy"
+      ],
+      "font_embed": "https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap",
+      "display_font": "\"Syne\", sans-serif",
+      "body_font": "\"Inter\", sans-serif",
+      "layout": "swiss",
+      "card_style": "outline",
+      "button_style": "outline",
+      "decor_style": "grid",
+      "hero_template": "1fr 1fr",
+      "seo_template": "1.45fr 0.55fr",
+      "feature_columns": 3,
+      "faq_columns": 4,
+      "hero_min_height": "78vh",
+      "panel_radius": "28px",
+      "card_radius": "26px",
+      "chip_radius": "999px",
+      "button_radius": "18px",
+      "outline_width": "1px",
+      "backdrop_blur": "0px",
+      "palette": {
+        "bg": "linear-gradient(160deg, #f8fafc 0%, #e0f2fe 42%, #dbeafe 100%)",
+        "surface": "rgba(255,255,255,0.9)",
+        "surface_border": "rgba(15,23,42,0.08)",
+        "text": "#0f172a",
+        "muted": "#475569",
+        "accent": "#0284c7",
+        "accent_alt": "#14b8a6",
+        "hero_glow": "rgba(2, 132, 199, 0.12)",
+        "button_text": "#f8fafc",
+        "panel_alt": "rgba(255,255,255,0.84)",
+        "shadow": "0 24px 56px rgba(14, 116, 144, 0.08)",
+        "input_fill": "rgba(15,23,42,0.03)"
+      }
+    },
+    "structure": {
+      "name": "Quick Compare Strip",
+      "slug": "quick-compare-strip",
+      "hero_variant": "tool-first",
+      "proof_variant": "metrics",
+      "section_order": [
+        "proof",
+        "features",
+        "faq",
+        "seo"
+      ],
+      "feature_columns": 3,
+      "faq_columns": 2,
+      "family": "compare-strip",
+      "moods": [
+        "direct",
+        "fast",
+        "comparison"
+      ],
+      "archetypes": [
+        "calculator",
+        "tool"
+      ],
+      "niches": [
+        "insurance",
+        "finance",
+        "quotes",
+        "switching"
+      ],
+      "keywords": [
+        "compare",
+        "choices",
+        "fast",
+        "matrix"
+      ],
+      "token_index": [
+        "calculator",
+        "choices",
+        "compare",
+        "comparison",
+        "direct",
+        "faq",
+        "fast",
+        "features",
+        "finance",
+        "first",
+        "insurance",
+        "matrix",
+        "metrics",
+        "proof",
+        "quick",
+        "quotes",
+        "seo",
+        "strip",
+        "switching",
+        "tool"
+      ]
+    },
+    "render_direction": "editorial-ledger",
+    "render_direction_name": "Editorial Ledger",
+    "page_blueprint": "signal-matrix",
+    "page_blueprint_name": "Signal Matrix",
+    "title": "Simulateur de Coût de Vie dans les Villes Françaises",
+    "tagline": "Estimez votre budget idéal",
+    "description": "Comparez le coût de la vie dans différentes villes françaises pour planifier un déménagement ou évaluer un budget. Inclut l",
+    "feature_prefix": "Bloc",
+    "action": "Utiliser l'outil",
+    "cta_primary": "Calculer mon budget",
+    "cta_secondary": "Consulter la FAQ",
+    "inputs": [
+      {
+        "id": "amount",
+        "label": "Montant de base",
+        "type": "number",
+        "placeholder": "7500",
+        "weight": 1.0
+      },
+      {
+        "id": "duration",
+        "label": "Durée estimée",
+        "type": "number",
+        "placeholder": "12",
+        "weight": 0.42
+      },
+      {
+        "id": "plan",
+        "label": "Niveau de service",
+        "type": "select",
+        "options": [
+          {
+            "label": "Essentiel",
+            "value": 1.0
+          },
+          {
+            "label": "Performance",
+            "value": 1.18
+          },
+          {
+            "label": "Premium",
+            "value": 1.34
+          }
+        ],
+        "weight": 1.0
+      }
+    ],
+    "hero_metrics": [
+      {
+        "value": "Editorial Ledger",
+        "label": "Cadence"
+      },
+      {
+        "value": "3",
+        "label": "Entrées"
+      },
+      {
+        "value": "Résultat recommandé",
+        "label": "Sortie"
+      }
+    ],
+    "trust_labels": [
+      "Editorial Ledger",
+      "Calculer mon budget",
+      "Résultat recommandé",
+      "Utilitaire immédiat",
+      "Structure SEO claire"
+    ],
+    "result_label": "Résultat recommandé",
+    "result_unit": "EUR",
+    "runtime_mode": "generic_calculator",
+    "page_variant": "editorial",
+    "faq_topic": "Simulateur de Coût de Vie dans les Villes Françaises",
+    "faq_entries": [
+      {
+        "question": "Pourquoi utiliser cet outil pour Simulateur de Coût de Vie dans les Villes Françaises ?",
+        "answer": "Il aide à cadrer le besoin rapidement et à orienter vers une prochaine action claire sur le marché France."
+      },
+      {
+        "question": "Le résultat est-il immédiat ?",
+        "answer": "Oui. L'interface est pensée pour une réponse rapide, lisible et exploitable dès la première interaction."
+      },
+      {
+        "question": "Cette page est-elle adaptée au SEO ?",
+        "answer": "Oui. La structure mélange utilité, clarté éditoriale et signaux de confiance sans surcharger l'expérience."
+      }
+    ],
+    "seo_paragraphs": [
+      "Cette page capte une intention forte autour de Simulateur de Coût de Vie dans les Villes Françaises et la transforme en action utile pour un public situé sur France.",
+      "Le format hero-first accélère la compréhension, réduit les frictions et améliore la lisibilité sur mobile comme sur desktop.",
+      "Le socle reste volontairement simple pour faciliter les tests, la QA continue et les variations SEO."
+    ],
+    "document_html": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Simulateur de Coût de Vie dans les Villes Françaises | Estimez votre budget idéal</title>\n    <meta name=\"description\" content=\"Comparez le coût de la vie dans différentes villes françaises pour planifier un déménagement ou évaluer un budget. Inclut l\">\n    <style>\n        body { font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; background-color: #f7f9fc; color: #333; line-height: 1.6; }\n        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }\n        header { background-color: #fff; padding: 40px 20px; text-align: center; border-bottom: 1px solid #eee; }\n        h1 { font-size: 3.5em; color: #2c3e50; margin-bottom: 10px; font-weight: 700; letter-spacing: -1px; }\n        h2 { font-size: 2.2em; color: #34495e; margin-top: 40px; margin-bottom: 20px; font-weight: 600; }\n        p { margin-bottom: 15px; }\n        .hero-subtitle { font-size: 1.3em; color: #555; max-width: 800px; margin: 0 auto 30px auto; }\n        .tool-section { background-color: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-top: 40px; }\n        label { display: block; margin-bottom: 8px; font-weight: bold; color: #444; }\n        select, input[type=\"number\"] { width: calc(100% - 20px); padding: 12px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; font-size: 1em; }\n        button { background-color: #007bff; color: white; padding: 15px 25px; border: none; border-radius: 5px; font-size: 1.1em; cursor: pointer; transition: background-color 0.3s ease; display: block; width: 100%; max-width: 300px; margin: 20px auto 0 auto; }\n        button:hover { background-color: #0056b3; }\n        .tool-result { margin-top: 30px; padding: 20px; background-color: #e9f5ff; border: 1px solid #cce0ff; border-radius: 8px; min-height: 100px; display: flex; align-items: center; justify-content: center; font-size: 1.1em; text-align: center; color: #2c3e50; font-weight: 500; }\n        .comparison-strip { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 40px; }\n        .city-card { background-color: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.03); flex: 1 1 300px; max-width: 350px; text-align: left; }\n        .city-card h3 { color: #007bff; margin-top: 0; font-size: 1.5em; }\n        .city-card ul { list-style: none; padding: 0; margin-top: 15px; }\n        .city-card li { margin-bottom: 8px; display: flex; justify-content: space-between; }\n        .city-card li strong { color: #333; }\n        .cta-buttons { text-align: center; margin-top: 50px; }\n        .cta-buttons button { display: inline-block; width: auto; margin: 0 10px; padding: 12px 30px; font-size: 1em; }\n        .seo-section { background-color: #f0f4f8; padding: 40px 20px; margin-top: 60px; border-top: 1px solid #e0e6ec; text-align: center; color: #555; }\n        .seo-section h2 { color: #2c3e50; font-size: 1.8em; margin-bottom: 25px; }\n        .seo-section p { max-width: 800px; margin: 0 auto 20px auto; text-align: left; }\n        .seo-section ul { list-style: inside; text-align: left; max-width: 800px; margin: 0 auto; padding-left: 20px; }\n        .seo-section li { margin-bottom: 8px; }\n        @media (max-width: 768px) {\n            h1 { font-size: 2.5em; }\n            h2 { font-size: 1.8em; }\n            .tool-section, .city-card { padding: 25px; }\n            button { padding: 12px 20px; font-size: 1em; }\n            .cta-buttons button { margin-bottom: 10px; }\n        }\n    </style>\n    <meta name=\"robots\" content=\"index, follow\">\n    <link rel=\"canonical\" href=\"https://simulateur-de-cout-de-vie-dans-les-villes-francaises-4.onrender.com\">\n    <meta property=\"og:title\" content=\"Simulateur de Coût de Vie dans les Villes Françaises\">\n    <meta property=\"og:description\" content=\"Comparez le coût de la vie dans différentes villes françaises pour planifier un déménagement ou évaluer un budget. Inclut l\">\n    <meta property=\"og:url\" content=\"https://simulateur-de-cout-de-vie-dans-les-villes-francaises-4.onrender.com\">\n    <meta property=\"og:type\" content=\"website\">\n    <script type=\"application/ld+json\">{\"@context\": \"https://schema.org\", \"@type\": \"WebApplication\", \"name\": \"Simulateur de Coût de Vie dans les Villes Françaises\", \"description\": \"Comparez le coût de la vie dans différentes villes françaises pour planifier un déménagement ou évaluer un budget. Inclut l\", \"url\": \"https://simulateur-de-cout-de-vie-dans-les-villes-francaises-4.onrender.com\", \"applicationCategory\": \"UtilityApplication\", \"operatingSystem\": \"Web Browser\"}</script>\n</head>\n<body data-site-slug=\"simulateur-de-cout-de-vie-dans-les-villes-francaises-4\" data-runtime-mode=\"generic_calculator\">\n    <header>\n        <div class=\"container\">\n            <h1>Simulateur de Coût de Vie en France</h1>\n            <p class=\"hero-subtitle\">Quel sera votre budget ? Comparez le coût de la vie entre les villes françaises pour mieux planifier votre installation ou votre budget au quotidien.</p>\n        </div>\n    </header>\n\n    <main class=\"container\">\n        <section class=\"tool-section\">\n            <h2>Estimez votre budget idéal</h2>\n            <p>Sélectionnez une ville et votre profil pour obtenir une estimation détaillée des dépenses mensuelles.</p>\n            <form id=\"tool-form\">\n                <label for=\"city-select\">Ville choisie :</label>\n                <select id=\"city-select\" name=\"city\">\n                    <option value=\"paris\">Paris</option>\n                    <option value=\"lyon\">Lyon</option>\n                    <option value=\"marseille\">Marseille</option>\n                    <option value=\"toulouse\">Toulouse</option>\n                    <option value=\"nice\">Nice</option>\n                    <option value=\"bordeaux\">Bordeaux</option>\n                    <option value=\"nantes\">Nantes</option>\n                    <option value=\"strasbourg\">Strasbourg</option>\n                    <option value=\"lille\">Lille</option>\n                    <option value=\"montpellier\">Montpellier</option>\n                </select>\n\n                <label for=\"profile-select\">Votre profil :</label>\n                <select id=\"profile-select\" name=\"profile\">\n                    <option value=\"single\">Personne seule</option>\n                    <option value=\"couple\">Couple</option>\n                    <option value=\"family\">Famille (2 adultes, 2 enfants)</option>\n                </select>\n\n                <button type=\"submit\" id=\"tool-submit\">Calculer mon budget</button>\n            </form>\n            <div id=\"tool-result\" class=\"tool-result\">\n                Votre estimation de budget apparaîtra ici après le calcul.\n            </div>\n        </section>\n\n        <section class=\"comparison-strip\">\n            <h2>Coût de la vie moyen par catégorie</h2>\n            <div class=\"city-card\">\n                <h3>Paris</h3>\n                <ul>\n                    <li>Loyer (T2) : <strong>1200 - 1800€</strong></li>\n                    <li>Transports (Navigo) : <strong>84€</strong></li>\n                    <li>Alimentation (mensuel) : <strong>300 - 450€</strong></li>\n                    <li>Loisirs (par mois) : <strong>100 - 200€</strong></li>\n                </ul>\n            </div>\n            <div class=\"city-card\">\n                <h3>Lyon</h3>\n                <ul>\n                    <li>Loyer (T2) : <strong>700 - 1100€</strong></li>\n                    <li>Transports (TCL) : <strong>66€</strong></li>\n                    <li>Alimentation (mensuel) : <strong>250 - 350€</strong></li>\n                    <li>Loisirs (par mois) : <strong>80 - 150€</strong></li>\n                </ul>\n            </div>\n            <div class=\"city-card\">\n                <h3>Nantes</h3>\n                <ul>\n                    <li>Loyer (T2) : <strong>600 - 900€</strong></li>\n                    <li>Transports (TAN) : <strong>58€</strong></li>\n                    <li>Alimentation (mensuel) : <strong>220 - 300€</strong></li>\n                    <li>Loisirs (par mois) : <strong>70 - 130€</strong></li>\n                </ul>\n            </div>\n        </section>\n\n        <section class=\"cta-buttons\">\n            <h2>Prêt à concrétiser votre projet ?</h2>\n            <button data-affiliate-slot=\"real_estate_fr\">Trouver un logement</button>\n            <button data-affiliate-slot=\"job_search_fr\">Rechercher un emploi</button>\n        </section>\n    </main>\n\n    <section class=\"seo-section\">\n        <h2>Découvrez le Coût de la Vie en France : Guide Complet pour Votre Budget</h2>\n        <p>Planifier un déménagement ou simplement optimiser vos dépenses en France demande une bonne compréhension des réalités économiques locales. Notre simulateur vous offre une estimation fiable pour mieux anticiper votre budget.</p>\n        <p>Que vous envisagiez de vivre à Paris, Lyon, Marseille, Toulouse, Nice, Bordeaux, Nantes, Strasbourg, Lille ou Montpellier, notre outil prend en compte les spécificités de chaque ville. Du logement aux transports, en passant par l'alimentation et les loisirs, chaque catégorie de dépense est analysée pour vous fournir une vue d'ensemble précise.</p>\n        <p>Trouver le logement idéal au meilleur prix, comprendre les abonnements de transport locaux, estimer le budget courses ou anticiper les coûts des sorties culturelles : autant de questions auxquelles notre simulateur apporte des réponses concrètes. Nous vous aidons à comparer efficacement les prix des loyers, l'immobilier, les coûts de scolarité pour les familles, et l'impact des variations régionales sur votre pouvoir d'achat.</p>\n        <p>Optimisez votre recherche \"coût de vie Paris\", \"budget mensuel Lyon\", \"loyer moyen Nantes\" ou \"prix immobilier Marseille\" grâce à notre interface intuitive. Obtenez des informations précieuses sur :</p>\n        <ul>\n            <li>Le budget nécessaire pour une personne seule, un couple ou une famille.</li>\n            <li>Les loyers médians et les prix au m² dans les grandes métropoles.</li>\n            <li>Les tarifs des transports en commun et les coûts liés à la voiture.</li>\n            <li>Une estimation des dépenses alimentaires et des loisirs.</li>\n            <li>Les différences significatives entre villes concernant le pouvoir d'achat.</li>\n        </ul>\n        <p>Prenez des décisions éclairées pour votre projet de vie en France. Notre outil est votre allié pour une planification financière sereine et réussie.</p>\n    </section>\n\n    <script>\n        document.getElementById('tool-form').addEventListener('submit', function(event) {\n            event.preventDefault();\n\n            const city = document.getElementById('city-select').value;\n            const profile = document.getElementById('profile-select').value;\n            const resultDiv = document.getElementById('tool-result');\n\n            let housingCost, transportCost, foodCost, leisureCost, totalCost;\n            let cityDisplay = \"\";\n\n            // Data based on hypothetical averages and ranges for demonstration\n            const data = {\n                'paris': {\n                    'single': { housing: 1200, transport: 84, food: 350, leisure: 150 },\n                    'couple': { housing: 1600, transport: 168, food: 600, leisure: 250 },\n                    'family': { housing: 2500, transport: 168, food: 900, leisure: 400 }\n                },\n                'lyon': {\n                    'single': { housing: 750, transport: 66, food: 280, leisure: 120 },\n                    'couple': { housing: 950, transport: 132, food: 480, leisure: 200 },\n                    'family': { housing: 1500, transport: 132, food: 750, leisure: 300 }\n                },\n                'marseille': {\n                    'single': { housing: 650, transport: 45, food: 250, leisure: 100 },\n                    'couple': { housing: 800, transport: 90, food: 420, leisure: 180 },\n                    'family': { housing: 1200, transport: 90, food: 680, leisure: 250 }\n                },\n                'toulouse': {\n                    'single': { housing: 680, transport: 50, food: 260, leisure: 110 },\n                    'couple': { housing: 850, transport: 100, food: 450, leisure: 190 },\n                    'family': { housing: 1300, transport: 100, food: 700, leisure: 280 }\n                },\n                'nice': {\n                    'single': { housing: 800, transport: 50, food: 270, leisure: 130 },\n                    'couple': { housing: 1000, transport: 100, food: 460, leisure: 220 },\n                    'family': { housing: 1600, transport: 100, food: 720, leisure: 320 }\n                },\n                'bordeaux': {\n                    'single': { housing: 700, transport: 50, food: 260, leisure: 110 },\n                    'couple': { housing: 900, transport: 100, food: 450, leisure: 190 },\n                    'family': { housing: 1400, transport: 100, food: 700, leisure: 280 }\n                },\n                'nantes': {\n                    'single': { housing: 600, transport: 58, food: 230, leisure: 90 },\n                    'couple': { housing: 750, transport: 116, food: 400, leisure: 160 },\n                    'family': { housing: 1100, transport: 116, food: 650, leisure: 230 }\n                },\n                'strasbourg': {\n                    'single': { housing: 620, transport: 50, food: 240, leisure: 95 },\n                    'couple': { housing: 780, transport: 100, food: 410, leisure: 170 },\n                    'family': { housing: 1150, transport: 100, food: 660, leisure: 240 }\n                },\n                'lille': {\n                    'single': { housing: 630, transport: 40, food: 245, leisure: 98 },\n                    'couple': { housing: 790, transport: 80, food: 415, leisure: 175 },\n                    'family': { housing: 1180, transport: 80, food: 670, leisure: 245 }\n                },\n                'montpellier': {\n                    'single': { housing: 680, transport: 50, food: 255, leisure: 105 },\n                    'couple': { housing: 850, transport: 100, food: 440, leisure: 185 },\n                    'family': { housing: 1250, transport: 100, food: 690, leisure: 270 }\n                }\n            };\n\n            const selectedData = data[city][profile];\n            housingCost = selectedData.housing;\n            transportCost = selectedData.transport;\n            foodCost = selectedData.food;\n            leisureCost = selectedData.leisure;\n            totalCost = housingCost + transportCost + foodCost + leisureCost;\n\n            const cityNames = {\n                'paris': 'Paris', 'lyon': 'Lyon', 'marseille': 'Marseille', 'toulouse': 'Toulouse',\n                'nice': 'Nice', 'bordeaux': 'Bordeaux', 'nantes': 'Nantes', 'strasbourg': 'Strasbourg',\n                'lille': 'Lille', 'montpellier': 'Montpellier'\n            };\n            cityDisplay = cityNames[city];\n\n            const profileNames = {\n                'single': 'une personne seule',\n                'couple': 'un couple',\n                'family': 'une famille (2 adultes, 2 enfants)'\n            };\n            const profileDisplay = profileNames[profile];\n\n            resultDiv.innerHTML = `\n                <p>Pour <strong>${profileDisplay}</strong> à <strong>${cityDisplay}</strong>, voici une estimation de vos dépenses mensuelles :</p>\n                <ul>\n                    <li>Logement : <strong>${housingCost} €</strong></li>\n                    <li>Transports : <strong>${transportCost} €</strong></li>\n                    <li>Alimentation : <strong>${foodCost} €</strong></li>\n                    <li>Loisirs & divers : <strong>${leisureCost} €</strong></li>\n                    <li><strong>Total estimé : ${totalCost} €</strong></li>\n                </ul>\n                <p><em>Ces chiffres sont des estimations moyennes et peuvent varier selon votre style de vie.</em></p>\n            `;\n        });\n    </script>\n<div id=\"qa-smoke-result\" hidden></div>\n<script id=\"farmbuilder-affiliate-helper\">\n(function () {\n  window.__UTILITY_AFFILIATE_MAP = window.__UTILITY_AFFILIATE_MAP || {};\n  document.addEventListener(\"click\", function (event) {\n    const target = event.target.closest(\"[data-affiliate-slot]\");\n    if (!target) return;\n    const slot = target.getAttribute(\"data-affiliate-slot\");\n    const href = window.__UTILITY_AFFILIATE_MAP[slot];\n    if (!href) return;\n    if (target.tagName && target.tagName.toLowerCase() === \"a\") {\n      target.setAttribute(\"href\", href);\n      target.removeAttribute(\"rel\");\n      return;\n    }\n    event.preventDefault();\n    window.open(href, \"_blank\");\n  }, true);\n})();\n</script>\n<script id=\"farmbuilder-functional-qa\">\n(function () {\n  function marker() {\n    let node = document.getElementById(\"qa-smoke-result\");\n    if (node) return node;\n    node = document.createElement(\"div\");\n    node.id = \"qa-smoke-result\";\n    node.hidden = true;\n    document.body.appendChild(node);\n    return node;\n  }\n\n  let qaFinished = false;\n  let qaWatchdog = null;\n\n  function normalize(text) {\n    return String(text || \"\").replace(/\\s+/g, \" \").trim();\n  }\n\n  function findForm() {\n    return document.getElementById(\"tool-form\") || document.querySelector(\"form\");\n  }\n\n  function findResult() {\n    return (\n      document.getElementById(\"tool-result\") ||\n      document.querySelector(\"[data-result]\") ||\n      document.querySelector(\".tool-result, .result-card, .result, .results, .output, .preview, .diagnostic, .analysis\")\n    );\n  }\n\n  function primaryAction(form) {\n    if (!form) return null;\n    return (\n      document.getElementById(\"tool-submit\") ||\n      form.querySelector(\"#tool-submit\") ||\n      form.querySelector(\"[data-primary-action]\") ||\n      form.querySelector(\"button[type=submit]\") ||\n      form.querySelector(\"button\") ||\n      form.querySelector(\"input[type=submit]\")\n    );\n  }\n\n  function resultSignature(node) {\n    if (!node) return \"\";\n    const text = normalize(node.textContent);\n    const html = normalize(node.innerHTML).slice(0, 600);\n    return `${text}||${html}`;\n  }\n\n  function resultHeadline(node) {\n    if (!node) return \"\";\n    const heading = node.querySelector(\"h1, h2, h3, strong, b\");\n    return normalize(heading ? heading.textContent : \"\");\n  }\n\n  function sampleText(field) {\n    const key = `${field.id || \"\"} ${field.name || \"\"} ${field.placeholder || \"\"}`.toLowerCase();\n    if (/email/.test(key)) return \"bonjour@example.com\";\n    if (/url|site|website|lien/.test(key)) return \"https://example.com/offre-solaire\";\n    if (/phone|tel|mobile/.test(key)) return \"0612345678\";\n    if (/ville|city|localisation|location|region|departement|postal/.test(key)) return \"Paris\";\n    if (/orientation/.test(key)) return \"sud\";\n    if (/keyword|theme|topic|sujet|subject/.test(key)) return \"energie solaire domestique\";\n    if (/titre|title/.test(key)) return \"Simulateur solaire maison\";\n    if (/nom|name|project/.test(key)) return \"Projet Horizon\";\n    if (/description|notes|content|message/.test(key)) return \"Maison individuelle exposee sud avec toiture exploitable.\";\n    return field.placeholder || \"France\";\n  }\n\n  function sampleNumber(field) {\n    const key = `${field.id || \"\"} ${field.name || \"\"}`.toLowerCase();\n    if (/inclinaison|angle|slope/.test(key)) return \"30\";\n    if (/surface|size|m2|sqm/.test(key)) return \"28\";\n    if (/annee|year/.test(key)) return \"2024\";\n    if (/prix|price|budget|cost|amount|montant/.test(key)) return \"12000\";\n    const min = Number(field.min || \"\");\n    const max = Number(field.max || \"\");\n    if (Number.isFinite(min) && Number.isFinite(max) && max >= min) {\n      return String(Math.min(max, Math.max(min, min + Math.round((max - min) * 0.35))));\n    }\n    if (Number.isFinite(min)) return String(Math.max(min, 12));\n    if (Number.isFinite(max)) return String(Math.min(max, 12));\n    return field.value || \"12\";\n  }\n\n  function applySample(field) {\n    const tag = (field.tagName || \"\").toLowerCase();\n    const type = (field.type || \"\").toLowerCase();\n    if (field.disabled) return;\n    if (type === \"hidden\" || type === \"submit\" || type === \"button\" || type === \"reset\" || type === \"image\" || type === \"file\") {\n      return;\n    }\n    const currentValue = normalize(field.value);\n    if (tag === \"select\") {\n      if (currentValue) return;\n      const option = Array.from(field.options || []).find((item) => item.value && !item.disabled) || field.options[0];\n      if (option) field.value = option.value;\n      return;\n    }\n    if (type === \"checkbox\") {\n      if (field.checked) return;\n      field.checked = true;\n      return;\n    }\n    if (type === \"radio\") {\n      if (field.checked) return;\n      field.checked = true;\n      return;\n    }\n    if (type === \"date\") {\n      if (currentValue) return;\n      field.value = \"2026-03-01\";\n      return;\n    }\n    if (type === \"email\") {\n      if (currentValue) return;\n      field.value = \"bonjour@example.com\";\n      return;\n    }\n    if (type === \"url\") {\n      if (currentValue) return;\n      field.value = \"https://example.com/offre-solaire\";\n      return;\n    }\n    if (type === \"tel\") {\n      if (currentValue) return;\n      field.value = \"0612345678\";\n      return;\n    }\n    if (type === \"color\") {\n      if (currentValue) return;\n      field.value = \"#2f855a\";\n      return;\n    }\n    if (type === \"number\" || type === \"range\") {\n      if (currentValue) return;\n      field.value = sampleNumber(field);\n      return;\n    }\n    if (currentValue) return;\n    field.value = sampleText(field);\n  }\n\n  function stamp(status, detail, headline, primary) {\n    if (qaFinished) return;\n    qaFinished = true;\n    if (qaWatchdog) {\n      window.clearTimeout(qaWatchdog);\n      qaWatchdog = null;\n    }\n    const node = marker();\n    node.dataset.status = status;\n    node.dataset.mode = \"native-form\";\n    node.dataset.detail = detail || \"\";\n    node.dataset.headline = headline || \"\";\n    node.dataset.primary = primary || \"\";\n    node.dataset.viewport = window.innerWidth <= 640 ? \"mobile\" : \"desktop\";\n    window.setTimeout(function () {\n      try {\n        window.stop();\n      } catch (_error) {}\n    }, 0);\n  }\n\n  function installModalGuards() {\n    const noop = function () {};\n    const approve = function () { return true; };\n    const empty = function () { return \"\"; };\n    try { window.alert = noop; } catch (_error) {}\n    try { window.confirm = approve; } catch (_error) {}\n    try { window.prompt = empty; } catch (_error) {}\n  }\n\n  function triggerAction(form, action) {\n    try {\n      if (typeof form.requestSubmit === \"function\") {\n        form.requestSubmit(action || undefined);\n        return;\n      }\n    } catch (_error) {}\n    if (action && typeof action.click === \"function\") {\n      action.click();\n      return;\n    }\n    form.dispatchEvent(new Event(\"submit\", { bubbles: true, cancelable: true }));\n  }\n\n  function inspectResult(before, attemptsLeft) {\n    const result = findResult();\n    if (!result) {\n      stamp(\"fail\", \"La zone de resultat est introuvable.\", \"\");\n      return;\n    }\n    const after = resultSignature(result);\n    const text = normalize(result.textContent);\n    if (after && after !== before && text.length >= 24) {\n      const primary = result.querySelector(\"a[href], button[data-href], [data-primary-url]\") || document.querySelector(\"#tool-result a[href]\");\n      stamp(\"pass\", \"Le formulaire natif a mis a jour la zone de resultat.\", resultHeadline(result), primary ? (primary.getAttribute(\"href\") || primary.getAttribute(\"data-primary-url\") || \"\") : \"\");\n      return;\n    }\n    if (attemptsLeft > 0) {\n      window.setTimeout(function () {\n        inspectResult(before, attemptsLeft - 1);\n      }, 250);\n      return;\n    }\n    stamp(\"fail\", \"La zone de resultat n'a pas renvoye de contenu exploitable.\", resultHeadline(result));\n  }\n\n  function runSmoke() {\n    const params = new URLSearchParams(window.location.search);\n    if (params.get(\"__qa\") !== \"functional\") return;\n    qaWatchdog = window.setTimeout(function () {\n      stamp(\"fail\", \"QA smoke timed out before the page reported a usable result.\", \"\");\n    }, 7000);\n    const form = findForm();\n    if (!form) {\n      stamp(\"fail\", \"Le formulaire principal est introuvable.\", \"\");\n      return;\n    }\n    const result = findResult();\n    const before = resultSignature(result);\n    installModalGuards();\n    try {\n      form.querySelectorAll(\"input, select, textarea\").forEach(applySample);\n    } catch (error) {\n      stamp(\"fail\", error && error.message ? `QA smoke sample failed: ${error.message}` : \"QA smoke sample failed before submit.\", \"\");\n      return;\n    }\n    const action = primaryAction(form);\n    try {\n      triggerAction(form, action);\n    } catch (error) {\n      stamp(\"fail\", error && error.message ? `QA smoke submit failed: ${error.message}` : \"QA smoke submit failed.\", \"\");\n      return;\n    }\n    inspectResult(before, 10);\n  }\n\n  window.addEventListener(\"error\", function (event) {\n    const message = event && event.message ? event.message : \"JavaScript runtime error during QA smoke.\";\n    stamp(\"fail\", `QA smoke JS error: ${message}`, \"\");\n  }, { once: true });\n\n  window.addEventListener(\"unhandledrejection\", function (event) {\n    const reason = event && event.reason;\n    const detail = typeof reason === \"string\"\n      ? reason\n      : reason && reason.message\n        ? reason.message\n        : \"Unhandled promise rejection during QA smoke.\";\n    stamp(\"fail\", `QA smoke rejection: ${detail}`, \"\");\n  }, { once: true });\n\n  if (document.readyState === \"loading\") {\n    document.addEventListener(\"DOMContentLoaded\", function () {\n      window.setTimeout(runSmoke, 60);\n    }, { once: true });\n  } else {\n    window.setTimeout(runSmoke, 60);\n  }\n})();\n</script>\n</body>\n</html>",
+    "generation_mode": "direct_html"
+  }
+}
