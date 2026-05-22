@@ -16,7 +16,7 @@
   "owner_display_name": "Administrator",
   "provider_space_id": "provider-space",
   "provider_space_name": "Provider space",
-  "status": "generated",
+  "status": "failed",
   "run_id": "run-1779420140546",
   "external_site_request_id": null,
   "external_client_ref": null,
@@ -28,10 +28,11 @@
     "status": "pending"
   },
   "deployment": {
-    "status": "pending"
+    "status": "failed"
   },
   "qa": {
-    "status": "pending"
+    "status": "failed",
+    "detail": "POST https://api.render.com/v1/services failed with 403: forbidden"
   },
   "features": [
     "Hero pattern: tool-first",
@@ -42,5 +43,7 @@
     "Runtime mode: generic_calculator",
     "Generation mode: direct_html",
     "Artifact rendered, awaiting QA and deployment"
-  ]
+  ],
+  "failure_reason": "POST https://api.render.com/v1/services failed with 403: forbidden",
+  "failed_at": "2026-05-22T03:27:45.074751+00:00"
 }
