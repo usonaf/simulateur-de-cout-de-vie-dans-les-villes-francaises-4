@@ -8,7 +8,7 @@
   "page_blueprint": "signal-matrix",
   "language": "fr",
   "country": "FR",
-  "url": null,
+  "url": "https://simulateur-de-cout-de-vie-dans-les.onrender.com",
   "expected_url": "https://simulateur-de-cout-de-vie-dans-les-villes-francaises-4.onrender.com",
   "created": "2026-05-22T03:26:59.821133+00:00",
   "owner_user_id": "user-1774822953462",
@@ -16,7 +16,7 @@
   "owner_display_name": "Administrator",
   "provider_space_id": "provider-space",
   "provider_space_name": "Provider space",
-  "status": "failed",
+  "status": "ready",
   "run_id": "run-1779420140546",
   "external_site_request_id": null,
   "external_client_ref": null,
@@ -25,14 +25,56 @@
   "publish_target": "render",
   "mode": "production",
   "github": {
-    "status": "pending"
+    "status": "published",
+    "repo_name": "simulateur-de-cout-de-vie-dans-les-villes-francaises-4",
+    "repo_url": "https://github.com/usonaf/simulateur-de-cout-de-vie-dans-les-villes-francaises-4",
+    "updated_at": 1779466813
   },
   "deployment": {
-    "status": "failed"
+    "status": "ready",
+    "provider": "render",
+    "service_id": "srv-d8885drtqb8s7386cpig",
+    "project_name": "simulateur-de-cout-de-vie-dans-les-villes-francaises-4",
+    "requested_project_name": null,
+    "deployment_id": "dep-d8885e3tqb8s7386cpt0",
+    "deployment_url": "https://simulateur-de-cout-de-vie-dans-les.onrender.com",
+    "public_url": "https://simulateur-de-cout-de-vie-dans-les.onrender.com",
+    "expected_public_url": "https://simulateur-de-cout-de-vie-dans-les.onrender.com",
+    "dashboard_url": "https://dashboard.render.com/static/srv-d8885drtqb8s7386cpig",
+    "ready_state": "live",
+    "target": "production",
+    "updated_at": 1779466832
   },
   "qa": {
-    "status": "failed",
-    "detail": "POST https://api.render.com/v1/services failed with 403: forbidden"
+    "status": "pass",
+    "detail": "desktop: Le formulaire natif a mis a jour la zone de resultat. | mobile: Le formulaire natif a mis a jour la zone de resultat.",
+    "target_url": "http://127.0.0.1:35357/index.html?__qa=functional",
+    "mode": "native-form",
+    "headline": "une personne seule",
+    "primary_url": "",
+    "desktop": {
+      "status": "pass",
+      "detail": "Le formulaire natif a mis a jour la zone de resultat.",
+      "target_url": "http://127.0.0.1:35357/index.html?__qa=functional",
+      "viewport": "desktop",
+      "mode": "native-form",
+      "headline": "une personne seule",
+      "primary_url": "",
+      "reported_viewport": "desktop",
+      "updated_at": 1779466803
+    },
+    "mobile": {
+      "status": "pass",
+      "detail": "Le formulaire natif a mis a jour la zone de resultat.",
+      "target_url": "http://127.0.0.1:35357/index.html?__qa=functional",
+      "viewport": "mobile",
+      "mode": "native-form",
+      "headline": "une personne seule",
+      "primary_url": "",
+      "reported_viewport": "mobile",
+      "updated_at": 1779466804
+    },
+    "updated_at": 1779466804
   },
   "features": [
     "Hero pattern: tool-first",
@@ -43,7 +85,5 @@
     "Runtime mode: generic_calculator",
     "Generation mode: direct_html",
     "Artifact rendered, awaiting QA and deployment"
-  ],
-  "failure_reason": "POST https://api.render.com/v1/services failed with 403: forbidden",
-  "failed_at": "2026-05-22T03:27:45.074751+00:00"
+  ]
 }
