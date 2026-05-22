@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulateur de Coût de Vie dans les Villes Françaises | Estimez votre budget idéal</title>
+    <meta name="description" content="Comparez le coût de la vie dans différentes villes françaises pour planifier un déménagement ou évaluer un budget. Inclut l">
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; background-color: #f7f9fc; color: #333; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        header { background-color: #fff; padding: 40px 20px; text-align: center; border-bottom: 1px solid #eee; }
+        h1 { font-size: 3.5em; color: #2c3e50; margin-bottom: 10px; font-weight: 700; letter-spacing: -1px; }
+        h2 { font-size: 2.2em; color: #34495e; margin-top: 40px; margin-bottom: 20px; font-weight: 600; }
+        p { margin-bottom: 15px; }
+        .hero-subtitle { font-size: 1.3em; color: #555; max-width: 800px; margin: 0 auto 30px auto; }
+        .tool-section { background-color: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-top: 40px; }
+        label { display: block; margin-bottom: 8px; font-weight: bold; color: #444; }
+        select, input[type="number"] { width: calc(100% - 20px); padding: 12px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; font-size: 1em; }
+        button { background-color: #007bff; color: white; padding: 15px 25px; border: none; border-radius: 5px; font-size: 1.1em; cursor: pointer; transition: background-color 0.3s ease; display: block; width: 100%; max-width: 300px; margin: 20px auto 0 auto; }
+        button:hover { background-color: #0056b3; }
+        .tool-result { margin-top: 30px; padding: 20px; background-color: #e9f5ff; border: 1px solid #cce0ff; border-radius: 8px; min-height: 100px; display: flex; align-items: center; justify-content: center; font-size: 1.1em; text-align: center; color: #2c3e50; font-weight: 500; }
+        .comparison-strip { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 40px; }
+        .city-card { background-color: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.03); flex: 1 1 300px; max-width: 350px; text-align: left; }
+        .city-card h3 { color: #007bff; margin-top: 0; font-size: 1.5em; }
+        .city-card ul { list-style: none; padding: 0; margin-top: 15px; }
+        .city-card li { margin-bottom: 8px; display: flex; justify-content: space-between; }
+        .city-card li strong { color: #333; }
+        .cta-buttons { text-align: center; margin-top: 50px; }
+        .cta-buttons button { display: inline-block; width: auto; margin: 0 10px; padding: 12px 30px; font-size: 1em; }
+        .seo-section { background-color: #f0f4f8; padding: 40px 20px; margin-top: 60px; border-top: 1px solid #e0e6ec; text-align: center; color: #555; }
+        .seo-section h2 { color: #2c3e50; font-size: 1.8em; margin-bottom: 25px; }
+        .seo-section p { max-width: 800px; margin: 0 auto 20px auto; text-align: left; }
+        .seo-section ul { list-style: inside; text-align: left; max-width: 800px; margin: 0 auto; padding-left: 20px; }
+        .seo-section li { margin-bottom: 8px; }
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5em; }
+            h2 { font-size: 1.8em; }
+            .tool-section, .city-card { padding: 25px; }
+            button { padding: 12px 20px; font-size: 1em; }
+            .cta-buttons button { margin-bottom: 10px; }
+        }
+    </style>
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://simulateur-de-cout-de-vie-dans-les-villes-francaises-4.onrender.com">
+    <meta property="og:title" content="Simulateur de Coût de Vie dans les Villes Françaises">
+    <meta property="og:description" content="Comparez le coût de la vie dans différentes villes françaises pour planifier un déménagement ou évaluer un budget. Inclut l">
+    <meta property="og:url" content="https://simulateur-de-cout-de-vie-dans-les-villes-francaises-4.onrender.com">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Simulateur de Coût de Vie dans les Villes Françaises", "description": "Comparez le coût de la vie dans différentes villes françaises pour planifier un déménagement ou évaluer un budget. Inclut l", "url": "https://simulateur-de-cout-de-vie-dans-les-villes-francaises-4.onrender.com", "applicationCategory": "UtilityApplication", "operatingSystem": "Web Browser"}</script>
+</head>
+<body data-site-slug="simulateur-de-cout-de-vie-dans-les-villes-francaises-4" data-runtime-mode="generic_calculator">
+    <header>
+        <div class="container">
+            <h1>Simulateur de Coût de Vie en France</h1>
+            <p class="hero-subtitle">Quel sera votre budget ? Comparez le coût de la vie entre les villes françaises pour mieux planifier votre installation ou votre budget au quotidien.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="tool-section">
+            <h2>Estimez votre budget idéal</h2>
+            <p>Sélectionnez une ville et votre profil pour obtenir une estimation détaillée des dépenses mensuelles.</p>
+            <form id="tool-form">
+                <label for="city-select">Ville choisie :</label>
+                <select id="city-select" name="city">
+                    <option value="paris">Paris</option>
+                    <option value="lyon">Lyon</option>
+                    <option value="marseille">Marseille</option>
+                    <option value="toulouse">Toulouse</option>
+                    <option value="nice">Nice</option>
+                    <option value="bordeaux">Bordeaux</option>
+                    <option value="nantes">Nantes</option>
+                    <option value="strasbourg">Strasbourg</option>
+                    <option value="lille">Lille</option>
+                    <option value="montpellier">Montpellier</option>
+                </select>
+
+                <label for="profile-select">Votre profil :</label>
+                <select id="profile-select" name="profile">
+                    <option value="single">Personne seule</option>
+                    <option value="couple">Couple</option>
+                    <option value="family">Famille (2 adultes, 2 enfants)</option>
+                </select>
+
+                <button type="submit" id="tool-submit">Calculer mon budget</button>
+            </form>
+            <div id="tool-result" class="tool-result">
+                Votre estimation de budget apparaîtra ici après le calcul.
+            </div>
+        </section>
+
+        <section class="comparison-strip">
+            <h2>Coût de la vie moyen par catégorie</h2>
+            <div class="city-card">
+                <h3>Paris</h3>
+                <ul>
+                    <li>Loyer (T2) : <strong>1200 - 1800€</strong></li>
+                    <li>Transports (Navigo) : <strong>84€</strong></li>
+                    <li>Alimentation (mensuel) : <strong>300 - 450€</strong></li>
+                    <li>Loisirs (par mois) : <strong>100 - 200€</strong></li>
+                </ul>
+            </div>
+            <div class="city-card">
+                <h3>Lyon</h3>
+                <ul>
+                    <li>Loyer (T2) : <strong>700 - 1100€</strong></li>
+                    <li>Transports (TCL) : <strong>66€</strong></li>
+                    <li>Alimentation (mensuel) : <strong>250 - 350€</strong></li>
+                    <li>Loisirs (par mois) : <strong>80 - 150€</strong></li>
+                </ul>
+            </div>
+            <div class="city-card">
+                <h3>Nantes</h3>
+                <ul>
+                    <li>Loyer (T2) : <strong>600 - 900€</strong></li>
+                    <li>Transports (TAN) : <strong>58€</strong></li>
+                    <li>Alimentation (mensuel) : <strong>220 - 300€</strong></li>
+                    <li>Loisirs (par mois) : <strong>70 - 130€</strong></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="cta-buttons">
+            <h2>Prêt à concrétiser votre projet ?</h2>
+            <button data-affiliate-slot="real_estate_fr">Trouver un logement</button>
+            <button data-affiliate-slot="job_search_fr">Rechercher un emploi</button>
+        </section>
+    </main>
+
+    <section class="seo-section">
+        <h2>Découvrez le Coût de la Vie en France : Guide Complet pour Votre Budget</h2>
+        <p>Planifier un déménagement ou simplement optimiser vos dépenses en France demande une bonne compréhension des réalités économiques locales. Notre simulateur vous offre une estimation fiable pour mieux anticiper votre budget.</p>
+        <p>Que vous envisagiez de vivre à Paris, Lyon, Marseille, Toulouse, Nice, Bordeaux, Nantes, Strasbourg, Lille ou Montpellier, notre outil prend en compte les spécificités de chaque ville. Du logement aux transports, en passant par l'alimentation et les loisirs, chaque catégorie de dépense est analysée pour vous fournir une vue d'ensemble précise.</p>
+        <p>Trouver le logement idéal au meilleur prix, comprendre les abonnements de transport locaux, estimer le budget courses ou anticiper les coûts des sorties culturelles : autant de questions auxquelles notre simulateur apporte des réponses concrètes. Nous vous aidons à comparer efficacement les prix des loyers, l'immobilier, les coûts de scolarité pour les familles, et l'impact des variations régionales sur votre pouvoir d'achat.</p>
+        <p>Optimisez votre recherche "coût de vie Paris", "budget mensuel Lyon", "loyer moyen Nantes" ou "prix immobilier Marseille" grâce à notre interface intuitive. Obtenez des informations précieuses sur :</p>
+        <ul>
+            <li>Le budget nécessaire pour une personne seule, un couple ou une famille.</li>
+            <li>Les loyers médians et les prix au m² dans les grandes métropoles.</li>
+            <li>Les tarifs des transports en commun et les coûts liés à la voiture.</li>
+            <li>Une estimation des dépenses alimentaires et des loisirs.</li>
+            <li>Les différences significatives entre villes concernant le pouvoir d'achat.</li>
+        </ul>
+        <p>Prenez des décisions éclairées pour votre projet de vie en France. Notre outil est votre allié pour une planification financière sereine et réussie.</p>
+    </section>
+
+    <script>
+        document.getElementById('tool-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const city = document.getElementById('city-select').value;
+            const profile = document.getElementById('profile-select').value;
+            const resultDiv = document.getElementById('tool-result');
+
+            let housingCost, transportCost, foodCost, leisureCost, totalCost;
+            let cityDisplay = "";
+
+            // Data based on hypothetical averages and ranges for demonstration
+            const data = {
+                'paris': {
+                    'single': { housing: 1200, transport: 84, food: 350, leisure: 150 },
+                    'couple': { housing: 1600, transport: 168, food: 600, leisure: 250 },
+                    'family': { housing: 2500, transport: 168, food: 900, leisure: 400 }
+                },
+                'lyon': {
+                    'single': { housing: 750, transport: 66, food: 280, leisure: 120 },
+                    'couple': { housing: 950, transport: 132, food: 480, leisure: 200 },
+                    'family': { housing: 1500, transport: 132, food: 750, leisure: 300 }
+                },
+                'marseille': {
+                    'single': { housing: 650, transport: 45, food: 250, leisure: 100 },
+                    'couple': { housing: 800, transport: 90, food: 420, leisure: 180 },
+                    'family': { housing: 1200, transport: 90, food: 680, leisure: 250 }
+                },
+                'toulouse': {
+                    'single': { housing: 680, transport: 50, food: 260, leisure: 110 },
+                    'couple': { housing: 850, transport: 100, food: 450, leisure: 190 },
+                    'family': { housing: 1300, transport: 100, food: 700, leisure: 280 }
+                },
+                'nice': {
+                    'single': { housing: 800, transport: 50, food: 270, leisure: 130 },
+                    'couple': { housing: 1000, transport: 100, food: 460, leisure: 220 },
+                    'family': { housing: 1600, transport: 100, food: 720, leisure: 320 }
+                },
+                'bordeaux': {
+                    'single': { housing: 700, transport: 50, food: 260, leisure: 110 },
+                    'couple': { housing: 900, transport: 100, food: 450, leisure: 190 },
+                    'family': { housing: 1400, transport: 100, food: 700, leisure: 280 }
+                },
+                'nantes': {
+                    'single': { housing: 600, transport: 58, food: 230, leisure: 90 },
+                    'couple': { housing: 750, transport: 116, food: 400, leisure: 160 },
+                    'family': { housing: 1100, transport: 116, food: 650, leisure: 230 }
+                },
+                'strasbourg': {
+                    'single': { housing: 620, transport: 50, food: 240, leisure: 95 },
+                    'couple': { housing: 780, transport: 100, food: 410, leisure: 170 },
+                    'family': { housing: 1150, transport: 100, food: 660, leisure: 240 }
+                },
+                'lille': {
+                    'single': { housing: 630, transport: 40, food: 245, leisure: 98 },
+                    'couple': { housing: 790, transport: 80, food: 415, leisure: 175 },
+                    'family': { housing: 1180, transport: 80, food: 670, leisure: 245 }
+                },
+                'montpellier': {
+                    'single': { housing: 680, transport: 50, food: 255, leisure: 105 },
+                    'couple': { housing: 850, transport: 100, food: 440, leisure: 185 },
+                    'family': { housing: 1250, transport: 100, food: 690, leisure: 270 }
+                }
+            };
+
+            const selectedData = data[city][profile];
+            housingCost = selectedData.housing;
+            transportCost = selectedData.transport;
+            foodCost = selectedData.food;
+            leisureCost = selectedData.leisure;
+            totalCost = housingCost + transportCost + foodCost + leisureCost;
+
+            const cityNames = {
+                'paris': 'Paris', 'lyon': 'Lyon', 'marseille': 'Marseille', 'toulouse': 'Toulouse',
+                'nice': 'Nice', 'bordeaux': 'Bordeaux', 'nantes': 'Nantes', 'strasbourg': 'Strasbourg',
+                'lille': 'Lille', 'montpellier': 'Montpellier'
+            };
+            cityDisplay = cityNames[city];
+
+            const profileNames = {
+                'single': 'une personne seule',
+                'couple': 'un couple',
+                'family': 'une famille (2 adultes, 2 enfants)'
+            };
+            const profileDisplay = profileNames[profile];
+
+            resultDiv.innerHTML = `
+                <p>Pour <strong>${profileDisplay}</strong> à <strong>${cityDisplay}</strong>, voici une estimation de vos dépenses mensuelles :</p>
+                <ul>
+                    <li>Logement : <strong>${housingCost} €</strong></li>
+                    <li>Transports : <strong>${transportCost} €</strong></li>
+                    <li>Alimentation : <strong>${foodCost} €</strong></li>
+                    <li>Loisirs & divers : <strong>${leisureCost} €</strong></li>
+                    <li><strong>Total estimé : ${totalCost} €</strong></li>
+                </ul>
+                <p><em>Ces chiffres sont des estimations moyennes et peuvent varier selon votre style de vie.</em></p>
+            `;
+        });
+    </script>
+<div id="qa-smoke-result" hidden></div>
+<script id="farmbuilder-affiliate-helper">
+(function () {
+  window.__UTILITY_AFFILIATE_MAP = window.__UTILITY_AFFILIATE_MAP || {};
+  document.addEventListener("click", function (event) {
+    const target = event.target.closest("[data-affiliate-slot]");
+    if (!target) return;
+    const slot = target.getAttribute("data-affiliate-slot");
+    const href = window.__UTILITY_AFFILIATE_MAP[slot];
+    if (!href) return;
+    if (target.tagName && target.tagName.toLowerCase() === "a") {
+      target.setAttribute("href", href);
+      target.removeAttribute("rel");
+      return;
+    }
+    event.preventDefault();
+    window.open(href, "_blank");
+  }, true);
+})();
+</script>
+<script id="farmbuilder-functional-qa">
+(function () {
+  function marker() {
+    let node = document.getElementById("qa-smoke-result");
+    if (node) return node;
+    node = document.createElement("div");
+    node.id = "qa-smoke-result";
+    node.hidden = true;
+    document.body.appendChild(node);
+    return node;
+  }
+
+  let qaFinished = false;
+  let qaWatchdog = null;
+
+  function normalize(text) {
+    return String(text || "").replace(/\s+/g, " ").trim();
+  }
+
+  function findForm() {
+    return document.getElementById("tool-form") || document.querySelector("form");
+  }
+
+  function findResult() {
+    return (
+      document.getElementById("tool-result") ||
+      document.querySelector("[data-result]") ||
+      document.querySelector(".tool-result, .result-card, .result, .results, .output, .preview, .diagnostic, .analysis")
+    );
+  }
+
+  function primaryAction(form) {
+    if (!form) return null;
+    return (
+      document.getElementById("tool-submit") ||
+      form.querySelector("#tool-submit") ||
+      form.querySelector("[data-primary-action]") ||
+      form.querySelector("button[type=submit]") ||
+      form.querySelector("button") ||
+      form.querySelector("input[type=submit]")
+    );
+  }
+
+  function resultSignature(node) {
+    if (!node) return "";
+    const text = normalize(node.textContent);
+    const html = normalize(node.innerHTML).slice(0, 600);
+    return `${text}||${html}`;
+  }
+
+  function resultHeadline(node) {
+    if (!node) return "";
+    const heading = node.querySelector("h1, h2, h3, strong, b");
+    return normalize(heading ? heading.textContent : "");
+  }
+
+  function sampleText(field) {
+    const key = `${field.id || ""} ${field.name || ""} ${field.placeholder || ""}`.toLowerCase();
+    if (/email/.test(key)) return "bonjour@example.com";
+    if (/url|site|website|lien/.test(key)) return "https://example.com/offre-solaire";
+    if (/phone|tel|mobile/.test(key)) return "0612345678";
+    if (/ville|city|localisation|location|region|departement|postal/.test(key)) return "Paris";
+    if (/orientation/.test(key)) return "sud";
+    if (/keyword|theme|topic|sujet|subject/.test(key)) return "energie solaire domestique";
+    if (/titre|title/.test(key)) return "Simulateur solaire maison";
+    if (/nom|name|project/.test(key)) return "Projet Horizon";
+    if (/description|notes|content|message/.test(key)) return "Maison individuelle exposee sud avec toiture exploitable.";
+    return field.placeholder || "France";
+  }
+
+  function sampleNumber(field) {
+    const key = `${field.id || ""} ${field.name || ""}`.toLowerCase();
+    if (/inclinaison|angle|slope/.test(key)) return "30";
+    if (/surface|size|m2|sqm/.test(key)) return "28";
+    if (/annee|year/.test(key)) return "2024";
+    if (/prix|price|budget|cost|amount|montant/.test(key)) return "12000";
+    const min = Number(field.min || "");
+    const max = Number(field.max || "");
+    if (Number.isFinite(min) && Number.isFinite(max) && max >= min) {
+      return String(Math.min(max, Math.max(min, min + Math.round((max - min) * 0.35))));
+    }
+    if (Number.isFinite(min)) return String(Math.max(min, 12));
+    if (Number.isFinite(max)) return String(Math.min(max, 12));
+    return field.value || "12";
+  }
+
+  function applySample(field) {
+    const tag = (field.tagName || "").toLowerCase();
+    const type = (field.type || "").toLowerCase();
+    if (field.disabled) return;
+    if (type === "hidden" || type === "submit" || type === "button" || type === "reset" || type === "image" || type === "file") {
+      return;
+    }
+    const currentValue = normalize(field.value);
+    if (tag === "select") {
+      if (currentValue) return;
+      const option = Array.from(field.options || []).find((item) => item.value && !item.disabled) || field.options[0];
+      if (option) field.value = option.value;
+      return;
+    }
+    if (type === "checkbox") {
+      if (field.checked) return;
+      field.checked = true;
+      return;
+    }
+    if (type === "radio") {
+      if (field.checked) return;
+      field.checked = true;
+      return;
+    }
+    if (type === "date") {
+      if (currentValue) return;
+      field.value = "2026-03-01";
+      return;
+    }
+    if (type === "email") {
+      if (currentValue) return;
+      field.value = "bonjour@example.com";
+      return;
+    }
+    if (type === "url") {
+      if (currentValue) return;
+      field.value = "https://example.com/offre-solaire";
+      return;
+    }
+    if (type === "tel") {
+      if (currentValue) return;
+      field.value = "0612345678";
+      return;
+    }
+    if (type === "color") {
+      if (currentValue) return;
+      field.value = "#2f855a";
+      return;
+    }
+    if (type === "number" || type === "range") {
+      if (currentValue) return;
+      field.value = sampleNumber(field);
+      return;
+    }
+    if (currentValue) return;
+    field.value = sampleText(field);
+  }
+
+  function stamp(status, detail, headline, primary) {
+    if (qaFinished) return;
+    qaFinished = true;
+    if (qaWatchdog) {
+      window.clearTimeout(qaWatchdog);
+      qaWatchdog = null;
+    }
+    const node = marker();
+    node.dataset.status = status;
+    node.dataset.mode = "native-form";
+    node.dataset.detail = detail || "";
+    node.dataset.headline = headline || "";
+    node.dataset.primary = primary || "";
+    node.dataset.viewport = window.innerWidth <= 640 ? "mobile" : "desktop";
+    window.setTimeout(function () {
+      try {
+        window.stop();
+      } catch (_error) {}
+    }, 0);
+  }
+
+  function installModalGuards() {
+    const noop = function () {};
+    const approve = function () { return true; };
+    const empty = function () { return ""; };
+    try { window.alert = noop; } catch (_error) {}
+    try { window.confirm = approve; } catch (_error) {}
+    try { window.prompt = empty; } catch (_error) {}
+  }
+
+  function triggerAction(form, action) {
+    try {
+      if (typeof form.requestSubmit === "function") {
+        form.requestSubmit(action || undefined);
+        return;
+      }
+    } catch (_error) {}
+    if (action && typeof action.click === "function") {
+      action.click();
+      return;
+    }
+    form.dispatchEvent(new Event("submit", { bubbles: true, cancelable: true }));
+  }
+
+  function inspectResult(before, attemptsLeft) {
+    const result = findResult();
+    if (!result) {
+      stamp("fail", "La zone de resultat est introuvable.", "");
+      return;
+    }
+    const after = resultSignature(result);
+    const text = normalize(result.textContent);
+    if (after && after !== before && text.length >= 24) {
+      const primary = result.querySelector("a[href], button[data-href], [data-primary-url]") || document.querySelector("#tool-result a[href]");
+      stamp("pass", "Le formulaire natif a mis a jour la zone de resultat.", resultHeadline(result), primary ? (primary.getAttribute("href") || primary.getAttribute("data-primary-url") || "") : "");
+      return;
+    }
+    if (attemptsLeft > 0) {
+      window.setTimeout(function () {
+        inspectResult(before, attemptsLeft - 1);
+      }, 250);
+      return;
+    }
+    stamp("fail", "La zone de resultat n'a pas renvoye de contenu exploitable.", resultHeadline(result));
+  }
+
+  function runSmoke() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("__qa") !== "functional") return;
+    qaWatchdog = window.setTimeout(function () {
+      stamp("fail", "QA smoke timed out before the page reported a usable result.", "");
+    }, 7000);
+    const form = findForm();
+    if (!form) {
+      stamp("fail", "Le formulaire principal est introuvable.", "");
+      return;
+    }
+    const result = findResult();
+    const before = resultSignature(result);
+    installModalGuards();
+    try {
+      form.querySelectorAll("input, select, textarea").forEach(applySample);
+    } catch (error) {
+      stamp("fail", error && error.message ? `QA smoke sample failed: ${error.message}` : "QA smoke sample failed before submit.", "");
+      return;
+    }
+    const action = primaryAction(form);
+    try {
+      triggerAction(form, action);
+    } catch (error) {
+      stamp("fail", error && error.message ? `QA smoke submit failed: ${error.message}` : "QA smoke submit failed.", "");
+      return;
+    }
+    inspectResult(before, 10);
+  }
+
+  window.addEventListener("error", function (event) {
+    const message = event && event.message ? event.message : "JavaScript runtime error during QA smoke.";
+    stamp("fail", `QA smoke JS error: ${message}`, "");
+  }, { once: true });
+
+  window.addEventListener("unhandledrejection", function (event) {
+    const reason = event && event.reason;
+    const detail = typeof reason === "string"
+      ? reason
+      : reason && reason.message
+        ? reason.message
+        : "Unhandled promise rejection during QA smoke.";
+    stamp("fail", `QA smoke rejection: ${detail}`, "");
+  }, { once: true });
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", function () {
+      window.setTimeout(runSmoke, 60);
+    }, { once: true });
+  } else {
+    window.setTimeout(runSmoke, 60);
+  }
+})();
+</script>
+</body>
+</html>
